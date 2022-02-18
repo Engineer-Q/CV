@@ -1,0 +1,156 @@
+/* CSS reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* CSS variables */
+:root {
+  --navbar-height: 59px;
+}
+/* navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+/* Logo and image */
+#logo {
+  margin: 3px 8px;
+}
+#logo img {
+  border-radius: 10px;
+  height: 50px;
+  margin: 10px 20px;
+}
+/* list styling */
+#navbar {
+  position: relative;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 22px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 858px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("../img/bg1.jpg") no-repeat center center/cover;
+  top: 0px;
+  left: 0px;
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+/* service section */
+#services {
+  margin: 34px;
+  display: flex;
+  margin: auto;
+
+  padding: 12px;
+}
+#services .box {
+  border: 2px solid brown;
+  margin: auto;
+  display: block;
+  border-radius: 23px;
+  background-color: rgb(250, 250, 141);
+
+  margin: 6px 12px;
+}
+#services img {
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+#services.box p {
+  font-family: sans-serif;
+}
+/* clients section */
+#client-section {
+  height: 344px;
+}
+#clients {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#clients img {
+  height: 44px;
+}
+/* Utility classes */
+.h-primary {
+  font-size: 1.8rem;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+}
+.h-primary center {
+  border: 2px solid black;
+}
+.h-secondary {
+  font-size: 2.8rem;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background: brown;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(250, 172, 172);
+  color: black;
+}
+.center {
+  text-align: center;
+}
